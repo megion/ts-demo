@@ -1,4 +1,4 @@
 export default interface IAccount {
-  name: string
+  readonly name: string
   age: number
 }

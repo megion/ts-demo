@@ -1,5 +1,6 @@
 import IAccount from "./interfaces/account"
 import Person from "./interfaces/person"
+//import {generateMenu} from "./menu"
 
 //Object.defineProperty(window, "MySweetApp", { value: "v.0.1", writable: false })
 

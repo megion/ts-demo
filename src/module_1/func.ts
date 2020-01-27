@@ -5,7 +5,7 @@ function isString(param: sn): param is string {
   return typeof param === "string"
 }
 
-export function getAvarage(a: sn, b: sn, c: sn): number {
+export function getAverage(a: sn, b: sn, c: sn): number {
   let total: number = 0
   if (isString(a)) {
     total += parseInt(a, 10)

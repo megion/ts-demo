@@ -1,6 +1,6 @@
 import IAccount from "./interfaces/account"
 import Person from "./interfaces/person"
-import { getAvarage } from "./func"
+import { getAverage } from "./func"
 import {Point} from "./point"
 //import {generateMenu} from "./menu"
 
@@ -159,3 +159,9 @@ interface IAA<T extends { aa: string; bb: number }> {
 }
 
 let vr: IAA<{ ss: string; aa: string; bb: number }>
+
+const average = getAverage(1, 2, 3)
+console.log(average)
+
+const point: Point = new Point(1, 2)
+point.sum()

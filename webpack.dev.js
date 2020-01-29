@@ -14,4 +14,7 @@ module.exports = merge(common, {
     //Watching does not work with NFS and machines in VirtualBox.
     poll: 1000,
   },
+  devServer: {
+    port: 9000,
+  },
 })

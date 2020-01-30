@@ -1,7 +1,7 @@
 import IAccount from "./interfaces/account"
 import Person from "./interfaces/person"
 import { getAverage } from "./func"
-import {Point} from "./point"
+import { Point } from "./point"
 //import {generateMenu} from "./menu"
 
 //Object.defineProperty(window, "MySweetApp", { value: "v.0.1", writable: false })
@@ -165,3 +165,13 @@ console.log(average)
 
 const point: Point = new Point(1, 2)
 point.sum()
+
+type Foo = {
+  foo: string
+}
+
+// TODO The error appear in case:
+// const f: Foo = {foo: 'xxx', baz: 123}
+// but if use additional variable (fooSubset) it works
+const fooSubset = {foo: 'xxx', baz: 123}
+const f: Foo = fooSubset

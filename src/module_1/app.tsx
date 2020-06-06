@@ -6,11 +6,7 @@ import "./app.less"
 import "bootstrap/dist/css/bootstrap.css"
 
 class App extends React.Component {
-  constructor(props: any) {
-    super(props)
-  }
-
-  public render() {
+  public render(): JSX.Element {
     return (
       <Provider store={store}>
         <div>ts demo</div>
